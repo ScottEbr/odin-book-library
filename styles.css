@@ -1,0 +1,76 @@
+:root {
+    /** Base colors */
+    --clr-dark-a0: #000000;
+    --clr-light-a0: #ffffff;
+
+    /** Theme primary colors */
+    --clr-primary-a0: #3eddc6;
+    --clr-primary-a10: #60e1cc;
+    --clr-primary-a20: #7ae5d2;
+
+    /** Theme surface colors */
+    --clr-surface-a0: #121212;
+    --clr-surface-a10: #282828;
+    --clr-surface-a20: #3f3f3f;
+
+    /** Theme tonal surface colors */
+    --clr-surface-tonal-a0: #1a2321;
+    --clr-surface-tonal-a10: #2f3836;
+    --clr-surface-tonal-a20: #464d4c;
+
+    /** Success colors */
+    --clr-success-a0: #22946e;
+    --clr-success-a10: #47d5a6;
+    --clr-success-a20: #9ae8ce;
+
+    /** Warning colors */
+    --clr-warning-a0: #a87a2a;
+    --clr-warning-a10: #d7ac61;
+    --clr-warning-a20: #ecd7b2;
+
+    /** Danger colors */
+    --clr-danger-a0: #9c2121;
+    --clr-danger-a10: #d94a4a;
+    --clr-danger-a20: #eb9e9e;
+
+    /** Info colors */
+    --clr-info-a0: #21498a;
+    --clr-info-a10: #4077d1;
+    --clr-info-a20: #92b2e5;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-dark-a0);
+    color: var(--clr-light-a0);
+    justify-content: center;
+    min-height: 100vh;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-rows: 200px 200px auto;
+    gap: 20px;
+}
+
+.header-container {
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: center;
+}
+
+.input-container {
+    grid-column: 2 / 2;
+    display: flex;
+    justify-content: center;
+}
+
+.table-container {
+    grid-column: 2/2;
+    display: flex;
+    justify-content: center;
+}
