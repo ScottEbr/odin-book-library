@@ -13,16 +13,29 @@
         </div>
         
         <div class="input-container">
-            <div class="book-contaier">
-                <input>
+            
+            <div class="title-container">
+                <p>Title</p>
+                <input id="title" autocomplete="off" required>
             </div>
-            <div class="author-contaier">
-                <input>
+            <div class="error-msg">Test1</div>
+
+            <div class="author-container">
+                <p>Author</p>
+                <input id="author" autocomplete="off" required>
             </div>
-            <div class="status-contaier">
-                <input>
+            <div class="error-msg">Test2</div>
+
+            <div class="status-container">
+                <p>Status</p>
+                <select id="status">
+                    <option value="read">Read</option>
+                    <option value="not read">Not Read</option>
+                </select>
             </div>
-            <button type="submit" class="submit-btn">Submit</button>
+
+            <button type="submit" class="submit-btn" onclick="saveData()">Submit</button>
+
         </div>
         
         <div class="table-container">
@@ -41,6 +54,8 @@
         </table>
         </div>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
