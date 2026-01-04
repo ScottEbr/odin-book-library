@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="book.svg">
     <title>Book Library</title>
+
 </head>
 <body>
     <div class="grid-container">
         <div class="header-container">
-            <h2>Book Library</h2>
+            <h1>Book Library</h1>
         </div>
         
         <div class="input-container">
@@ -18,23 +20,23 @@
                 <p>Title</p>
                 <input id="title" autocomplete="off" required>
             </div>
-            <div class="error-msg">Test1</div>
+            <div class="error-msg"></div>
 
             <div class="author-container">
                 <p>Author</p>
                 <input id="author" autocomplete="off" required>
             </div>
-            <div class="error-msg">Test2</div>
+            <div class="error-msg"></div>
 
             <div class="status-container">
                 <p>Status</p>
                 <select id="status">
-                    <option value="read">Read</option>
-                    <option value="not read">Not Read</option>
+                    <option value="Read">Read</option>
+                    <option value="Not read">Not Read</option>
                 </select>
             </div>
 
-            <button type="submit" class="submit-btn" onclick="saveData()">Submit</button>
+            <button type="submit" class="submit-btn">Submit</button>
 
         </div>
         
@@ -49,7 +51,7 @@
                     <th></th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table-body">
             </tbody>
         </table>
         </div>
